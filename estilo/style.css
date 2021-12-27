@@ -1,0 +1,155 @@
+@charset "UTF-8"; 
+
+:root {
+    --color1: #FF8E00; 
+    --color2: #FF7F00; 
+    --color3: #FF6702; 
+    --color4: #FF551B; 
+    --color5: #E54818; 
+
+    --font-padrão: Arial, Helvetica, sans-serif; 
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: var(--font-padrão);
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+header > h1 {
+    color: white;
+    font-weight: normal; 
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h1#logo::after {
+    content: '\1F4D9';
+}
+
+
+header > p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.329);
+}
+
+nav > a {
+    color: var(--color1);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: white;
+    color: var(--color2);
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    max-width: 1000px;
+    min-height: 300px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+main h3
+{ 
+    font-weight: bold;
+    text-align: left;
+    background-image: linear-gradient(to bottom, var(--color1), var(--color3));
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1.5em;
+}
+
+main h2 {
+    font-weight: bold;
+    text-align: left;
+    background-image: linear-gradient(to right, var(--color2), transparent);
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+main form {
+    text-align: left;
+    font-weight: bolder;
+}
+
+div#carousel {
+    padding: 20px;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+div#carousel h5 {
+    color: var(--color3);
+    font-size: 2em;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+aside {
+    background-color: #ff8000a2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    margin-top: 50px;
+}
+
+aside > h3 {
+    font-weight: bold;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+aside > p {
+    color:  white;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p {
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+}
